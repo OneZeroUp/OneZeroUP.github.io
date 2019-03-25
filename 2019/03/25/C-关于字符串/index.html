@@ -96,20 +96,25 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="妖灵海">
-<meta property="og:url" content="https://onezeroup.github.io/index.html">
+  <meta name="description" content="字符串一直都是一个让我头疼的问题。因为许多算法题目，需要输入输出的地方多多少少都会涉及到字符串。  在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻从哪里 讲起呢？本想从输入-输出讲起，但cin,cout我也说不什么新花样。还是从字符串开始讲起吧~  参照C++ Primer Plus。 C风格字符串12char dog[8] =">
+<meta name="keywords" content="-C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++关于字符串">
+<meta property="og:url" content="https://onezeroup.github.io/2019/03/25/C-关于字符串/index.html">
 <meta property="og:site_name" content="妖灵海">
+<meta property="og:description" content="字符串一直都是一个让我头疼的问题。因为许多算法题目，需要输入输出的地方多多少少都会涉及到字符串。  在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻从哪里 讲起呢？本想从输入-输出讲起，但cin,cout我也说不什么新花样。还是从字符串开始讲起吧~  参照C++ Primer Plus。 C风格字符串12char dog[8] =">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-25T05:09:17.243Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="妖灵海">
+<meta name="twitter:title" content="C++关于字符串">
+<meta name="twitter:description" content="字符串一直都是一个让我头疼的问题。因为许多算法题目，需要输入输出的地方多多少少都会涉及到字符串。  在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻从哪里 讲起呢？本想从输入-输出讲起，但cin,cout我也说不什么新花样。还是从字符串开始讲起吧~  参照C++ Primer Plus。 C风格字符串12char dog[8] =">
 
 
 
 
 
 
-  <link rel="canonical" href="https://onezeroup.github.io/">
+  <link rel="canonical" href="https://onezeroup.github.io/2019/03/25/C-关于字符串/">
 
 
 
@@ -119,7 +124,7 @@
   };
 </script>
 
-  <title>妖灵海</title>
+  <title>C++关于字符串 | 妖灵海</title>
   
 
 
@@ -167,8 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -206,7 +210,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -336,9 +340,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -370,10 +374,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/25/C-关于字符串/" class="post-title-link" itemprop="url">C++关于字符串</a>
+          <h1 class="post-title" itemprop="name headline">C++关于字符串
+
               
             
           </h1>
@@ -455,9 +457,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>字符串一直都是一个让我头疼的问题。因为许多算法题目，需要输入输出的地方多多少少都会涉及到字符串。</p>
 </blockquote>
 <h2 id="在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是-需要我自己做一个word吧。嘻嘻嘻"><a href="#在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是-需要我自己做一个word吧。嘻嘻嘻" class="headerlink" title="在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻"></a>在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻</h2><p>从哪里 讲起呢？<br>本想从输入-输出讲起，但cin,cout我也说不什么新花样。还是从字符串开始讲起吧~  参照C++ Primer Plus。</p>
@@ -471,8 +471,6 @@
 <p>string str1;<br>cin&gt;&gt;str1;<br>cout&lt;&lt;str1&lt;&lt;endl;<br>cout&lt;&lt;str1[2]&lt;&lt;endl;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;确定字符串中字符数的两种常规操作</span><br></pre></td></tr></table></figure></p>
 <p>int len1 = str1.size(); //str1不是参数<br>int len2 = strlen(charr1);<br><code>`</code><br>其实….我有一个循环输入的问题<br>但是 没有遇到合适的例子 书上也没有写 ….暂且 存个档？</p>
 
-          
-        
       
     </div>
 
@@ -493,329 +491,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://onezeroup.github.io/2019/03/25/2019-03-25随笔/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="耀灵">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="妖灵海">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/25/2019-03-25随笔/" class="post-title-link" itemprop="url">2019.03.25随笔</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Erstellt: 2019-03-25 09:16:13 / Geändert am: 09:18:54" itemprop="dateCreated datePublished" datetime="2019-03-25T09:16:13+08:00">2019-03-25</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/随笔/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/C/" rel="tag"># -C++</a>
           
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="临近毕业"><a href="#临近毕业" class="headerlink" title="临近毕业"></a>临近毕业</h2><p>   我是15年9月来武汉读书的，转眼大学四年就要过去了，不出意外应该是19年6月毕业。<br>   每到人生的十字路口，心理多多少少都会有一些害怕，对未知的恐惧。 每一个选择 看似 机缘巧合，实际上却像 无数个二进制一样，造就了人与人之间的差异。<br>   家里在今年出现了许多变故，家庭破败，失去了收入来源，我也从锦衣玉食的少爷，不得不缩衣节食、拮据开销。<br>   但其实…这就有很多问题。<br>   毕业本来就是忙着写论文找工作。幸好在去年放假之前，我把论文大概的模型计算了一下，心理有个大致的了解，所以也不按部就班写就好。<br>   但是找工作…就颇为繁琐。因为论文你只要写出来就可以顺利毕业，好坏对你毕业都没有什么影响。<br>   但是找工作则不然，一个好的公司，会让你学到很多东西能有一个正确的价值观，好的开始。而若不幸去了一个 老板有些问题的公司，那无休止的加班会让自己失去进步的空间，以后的路也很难走下去了。   所以这件事的好坏造成的影响远远比论文要深远。而且写论文是和自己做竞争，只要自己尽了努力就好。但是找工作是和其他人竞争，这…就激烈了。<br>   我小的时候，以为自己会一辈子衣食无忧，也不知道在哪里读了<br>   马克思的那篇《青年在职业选择时的考虑》。于是…就立下了一个理想  做一个推动世界发展的人。<br>   推动世界发展 和马克思 改造世界的想法是不大一样的，相似之处在于 都是对世界有变化和影响，但是 马克思是想通过人的计划手段 改造世界 征服世界，而我想引起变化，用比较流行的观点来说 就是小趋势（影响趋势的趋势，带来变化的变化）。<br>   我刚刚上大学的时候，因为受了家里传统观念的影响 认为从政能 改变世界 。但在一次和 学校领导吃饭的饭局上，学校的一个主任 说了这样一句话“到了他们这个位置，自己已经不能决定自己的命运了”。<br>   这句话让我产生说了很多的思索，现在是一个新的世界，传统的观念有许多地方已经不适用了。<br>   所以我尝试去一些新的事情，比如 创业。  但是实际情况是 大学生创业没有技术壁垒，做的生意和普通劳动者做的事情都是一样的。<br>   退出创业的时候已经大三了，当时觉得该找工作了。因为家里的缘故也多半不能指着家里帮助我什么了，就想着自己学个本事，有个 一技之长。  然后就走上了 写代码的道路。<br>   说句心里话，有时常常感叹自己不是 科班的。因为我觉得 计算机、编程…都是挺有意思的事情。有时自己写的代码，出错了也不知道和谁讨论，自己的想法与谁沟通…..。<br>   我现在特别担心，自己找不到工作，这样 三脚猫的功夫就被废了。和普通的人没有什么差别，去做销售？做客服？那都不是我想做的啊！<br>   金三银四，三月已经快过去了，面试的几家公司，也没有合适的offer….。也不知道结果会怎么样。<br>   当下的打算 就是 努力看看补补技术功底，刷刷leetcode(这好像不是一件容易的事，有时候有想法有思路，但是代码写不出来….难受)，在把论文写一写。<br>   我已经下定决定 吃编程这口饭了 ，那 狭路相逢勇者胜 ！！！</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://onezeroup.github.io/2019/03/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="耀灵">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="妖灵海">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/22/hello-world/" class="post-title-link" itemprop="url">X1</a>
-              
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/03/25/2019-03-25随笔/" rel="next" title="2019.03.25随笔">
+                <i class="fa fa-chevron-left"></i> 2019.03.25随笔
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Erstellt: 2019-03-22 14:14:30" itemprop="dateCreated datePublished" datetime="2019-03-22T14:14:30+08:00">2019-03-22</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Bearbeitet am</span>
-                
-                <time title="Geändert am: 2019-03-24 17:19:44" itemprop="dateModified" datetime="2019-03-24T17:19:44+08:00">2019-03-24</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -825,14 +530,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -852,8 +558,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -937,6 +652,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是-需要我自己做一个word吧。嘻嘻嘻"><span class="nav-number">1.</span> <span class="nav-text">在这里，让我和字符串做一个了断吧。如果以后在涉及到字符串头疼的问题，可能就是 需要我自己做一个word吧。嘻嘻嘻</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C风格字符串"><span class="nav-number">2.</span> <span class="nav-text">C风格字符串</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1081,6 +813,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -1096,6 +832,8 @@
 
   
 
+
+  
 
 
   
